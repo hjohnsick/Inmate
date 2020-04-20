@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "AddInmate";
+}
+
+<h1>Process Inmate</h1>
+
+<form action="../PoliceHq/AddInmate" method="post">
+    <input type="text" name="FirstName" value="First Name" />
+    <input type="text" name="LastName" value="Last Name" />
+    DOB<input type="date" name="Dob" value="DOB" />
+    <input type="text" name="Charges" value="Charges" />
+    Date Booked<input type="date" name="DateBooked" value="Hair Color" />
+    <input type="text" name="EyeColor" value="Eye Color" />
+    Tattoos<input type="radio" name="Tattoos" value="true" />
+    No Tattoos<input type="radio" name="Tattoos" value="false" />
+    <input type="submit" value="Process Inmate"/>
+</form>
+

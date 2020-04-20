@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "UpdateInmate";
+}
+@model Inmate
+
+<h1>Update Inmate</h1>
+
+<form action="../PoliceHqDb/UpdateInmate" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="text" name="FirstName" value="@Model.FirstName" placeholder="@Model.FirstName" />
+    <input type="text" name="LastName" value="@Model.LastName" placeholder="@Model.LastName"/>
+    <input type="date" name="Dob" value="@Model.Dob" placeholder="@Model.Dob"/>
+    <input type="text" name="Charges" value="@Model.Charges" placeholder="@Model.Charges"/>
+    <input type="date" name="DateBooked" value="@Model.DateBooked" placeholder="@Model.DateBooked"/>
+    <input type="text" name="HairColor" value="@Model.HairColor" placeholder="@Model.HairColor"/>
+    <input type="text" name="EyeColor" value="@Model.EyeColor" placeholder="@Model.EyeColor"/>
+    <input type="submit"  value="Update Inmate" />
+</form>
+
